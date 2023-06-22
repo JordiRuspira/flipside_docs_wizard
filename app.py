@@ -37,10 +37,16 @@ def load_indexes():
     index = load_index_from_storage(storage_context)
     return index
 
+def configure():
+    load_dotenv()
+
+configure()
+
+#os.getenv('api_key')
 
 # API Key
-load_dotenv()  # Load values from .env file
-openai.api_key = os.getenv("OPENAI_API_KEY")
+#load_dotenv()  # Load values from .env file
+openai.api_key = os.getenv('api_key')
 #openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Load index
