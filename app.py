@@ -36,9 +36,9 @@ def load_indexes():
     index = load_index_from_storage(storage_context)
     return index
  
-#openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
-openai.api_key = st.secrets["API_KEY"]
+#openai.api_key = st.secrets["API_KEY"]
 # Load index
 index = load_indexes()
 
