@@ -38,7 +38,7 @@ def load_indexes():
 
 
 # API Key
-openai.api_key = st.secrets["API_KEY"]
+openai.api_key = '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'
 
 # Load index
 index = load_indexes()
