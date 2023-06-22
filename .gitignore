@@ -73,8 +73,8 @@ docs/_build/
 
 # PyBuilder
 .pybuilder/
-target/
-imanoob.txt
+target/ 
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -120,7 +120,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-mysecret.env
+
 .env
 .venv
 env/
