@@ -2,6 +2,7 @@ import streamlit as st
 from llama_index import StorageContext, load_index_from_storage
 import os
 import openai
+from dotenv import load_dotenv
 
 
 # Configure Streamlit Page
@@ -38,7 +39,9 @@ def load_indexes():
 
 
 # API Key
-openai.api_key = os.environ["OPENAI_API_KEY"]
+load_dotenv()  # Load values from .env file
+openai.api_key = os.getenv("OPENAI_API_KEY")
+#openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Load index
 index = load_indexes()
