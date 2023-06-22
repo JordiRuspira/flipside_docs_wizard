@@ -6,7 +6,7 @@ import openai
 
 # Configure Streamlit Page
 page_icon = "https://dune.com/assets/DuneLogoCircle.svg"
-st.set_page_config(page_title="Dune Docs Wizard", page_icon=page_icon)
+st.set_page_config(page_title="Flipside Docs Wizard", page_icon=page_icon)
 
 # Read Custom CSS
 with open("assets/css/style.css", "r") as f:
@@ -20,7 +20,7 @@ st.write(
     unsafe_allow_html=True,
 )
 st.write(
-    "<h5>Ask any question about Dune's <a href='https://dune.com/docs/'>technical docs</a>.</h5>",
+    "<h5>Ask any question about Flipside's <a href='https://docs.flipsidecrypto.com/'>technical docs</a>.</h5>",
     unsafe_allow_html=True,
 )
 
