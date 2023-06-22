@@ -1,8 +1,7 @@
 import streamlit as st
 from llama_index import StorageContext, load_index_from_storage
 import os
-import openai
-from dotenv import load_dotenv
+import openai 
 
 
 # Configure Streamlit Page
